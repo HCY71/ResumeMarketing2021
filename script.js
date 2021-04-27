@@ -44,12 +44,9 @@ $(window).mousemove(function(e){
 
 
 //Loader Control
-$(document).ready(function(){
-	setTimeout(function(){
-		$('body').addClass("loaded");
-		setTimeout(function(){$(".loaderWrapper, .loader").hide()},2000);
-	},3500);
-});
+// $(document).ready(function(){
+	
+// });
 
 //Guide Control
 $(".guidance").click(function () {
@@ -60,6 +57,10 @@ $(".guidance").click(function () {
 
 //Resume Control
 $(document).ready(function () {
+	setTimeout(function(){
+		$('body').addClass("loaded");
+		setTimeout(function(){$(".loaderWrapper, .loader").hide()},2000);
+	},3500);
 	var win_w = $(window).innerWidth();
 	var pages_w = $(".pages").innerWidth();
 	var move = win_w + pages_w;
@@ -109,9 +110,9 @@ $(".languageSwitch").click(function () {
 		$(".languageSwitch .control").addClass("en");
 		$(".languageSwitch .words_ch").css("opacity", "0");
 		$(".languageSwitch .words_en").css("opacity", "1");
-		$(".pages .page .resume img").attr("src", "Assets/Resume_en.png");
-		$(".pages .page .self-intro img").attr("src", "Assets/Intro_en.png");
-		$(".pages .page .showcase img").attr("src", "Assets/Pics_en.png");
+		$(".pages .page .resume img").attr("src", "https://i.imgur.com/sk1dfk3.png");
+		$(".pages .page .self-intro img").attr("src", "https://i.imgur.com/0DRaumg.png");
+		$(".pages .page .showcase img").attr("src", "https://i.imgur.com/LyohyOm.png");
 	} else {
 		console.log("clicked_ch");
 		$(".languageSwitch").addClass("light");
@@ -119,9 +120,9 @@ $(".languageSwitch").click(function () {
 		$(".languageSwitch .control").addClass("ch");
 		$(".languageSwitch .words_en").css("opacity", "0");
 		$(".languageSwitch .words_ch").css("opacity", "1");
-		$(".pages .page .resume img").attr("src", "Assets/Resume_ch.png");
-		$(".pages .page .self-intro img").attr("src", "Assets/Intro_ch.png");
-		$(".pages .page .showcase img").attr("src", "Assets/Pics_ch.png");
+		$(".pages .page .resume img").attr("src", "https://i.imgur.com/wAyOWPa.png");
+		$(".pages .page .self-intro img").attr("src", "https://i.imgur.com/getvjbH.png");
+		$(".pages .page .showcase img").attr("src", "https://i.imgur.com/RymtsoE.png");
 	}
 });
 
