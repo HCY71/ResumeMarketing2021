@@ -109,9 +109,9 @@ $(".languageSwitch").click(function () {
 		$(".languageSwitch .control").addClass("en");
 		$(".languageSwitch .words_ch").css("opacity", "0");
 		$(".languageSwitch .words_en").css("opacity", "1");
-		$(".pages .page .resume img").attr("src", "Assets/Resume_en.svg");
-		$(".pages .page .self-intro img").attr("src", "Assets/Intro_en.svg");
-		$(".pages .page .showcase img").attr("src", "Assets/Pics_en.svg");
+		$(".pages .page .resume img").attr("src", "Assets/Resume_en.png");
+		$(".pages .page .self-intro img").attr("src", "Assets/Intro_en.png");
+		$(".pages .page .showcase img").attr("src", "Assets/Pics_en.png");
 	} else {
 		console.log("clicked_ch");
 		$(".languageSwitch").addClass("light");
@@ -119,9 +119,9 @@ $(".languageSwitch").click(function () {
 		$(".languageSwitch .control").addClass("ch");
 		$(".languageSwitch .words_en").css("opacity", "0");
 		$(".languageSwitch .words_ch").css("opacity", "1");
-		$(".pages .page .resume img").attr("src", "Assets/Resume_ch.svg");
-		$(".pages .page .self-intro img").attr("src", "Assets/Intro_ch.svg");
-		$(".pages .page .showcase img").attr("src", "Assets/Pics_ch.svg");
+		$(".pages .page .resume img").attr("src", "Assets/Resume_ch.png");
+		$(".pages .page .self-intro img").attr("src", "Assets/Intro_ch.png");
+		$(".pages .page .showcase img").attr("src", "Assets/Pics_ch.png");
 	}
 });
 
