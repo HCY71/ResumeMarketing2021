@@ -83,7 +83,7 @@
         <div class="container">
             <div class="showcase">
                 <div class="ms">
-                    <div class="left"><img src="assets/ms.png" alt=""></div>
+                    <div class="left"><img src="assets/ms.jpg" alt=""></div>
                     <div class="right"><img class="hr" src="assets/hr_white.svg" alt="">
                         <h2>微軟一日實習生計畫 | 行銷
                         </h2>
