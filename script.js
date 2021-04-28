@@ -87,7 +87,15 @@ $(document).ready(function () {
 
 	var lan_en = true;
 	var originalHtml = $(".pages").html();
+	var chHtml;
+	fetch('assets/pages_ch.txt')
+	.then(response => response.text())
+	.then(data => {
+		chHtml = data;
+		console.log(data);
+	});
 	$(".languageSwitch").click(function () {
+		
 		page = 0;
 		$(".circle").removeClass("bright");
 		if (page < 3) {
@@ -115,7 +123,7 @@ $(document).ready(function () {
 			$(".languageSwitch .control").addClass("ch");
 			$(".languageSwitch .words_en").css("opacity", "0");
 			$(".languageSwitch .words_ch").css("opacity", "1");
-			$(".pages").load("assets/pages_ch.txt");
+			$(".pages").html(chHtml);
 			$(".pages").addClass("ch");
 		}
 
