@@ -90,31 +90,31 @@
   0% {
     width: 30px;
     height: 30px;
-    border: solid 2px rgba(255, 255, 255, 0.6);
+    border: solid 0.3vh rgba(255, 255, 255, 0.6);
   }
   50% {
     width: 50px;
     height: 50px;
-    border: solid 2px rgba(255, 255, 255, 0.4);
+    border: solid 0.3vh rgba(255, 255, 255, 0.4);
   }
   100% {
     width: 70px;
     height: 70px;
-    border: solid 2px rgba(255, 255, 255, 0.1);
+    border: solid 0.3vh rgba(255, 255, 255, 0.1);
   }
 }
 @keyframes rippleSmall {
   0% {
     transform: scale(1.5);
-    border: solid 2px rgba(255, 255, 255, 0.6);
+    border: solid 0.1vh rgba(255, 255, 255, 0.6);
   }
   50% {
     transform: scale(2);
-    border: solid 2px rgba(255, 255, 255, 0.4);
+    border: solid 0.1vh rgba(255, 255, 255, 0.4);
   }
   100% {
     transform: scale(3);
-    border: solid 2px rgba(255, 255, 255, 0.1);
+    border: solid 0.1vh rgba(255, 255, 255, 0.1);
   }
 }
 @keyframes divIn {
@@ -273,8 +273,8 @@ html, body {
   cursor: pointer;
 }
 .guidance .guideClick {
-  width: 10px;
-  height: 10px;
+  width: 5vh;
+  height: 5vh;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -285,22 +285,22 @@ html, body {
   animation: ripple 1s infinite linear;
 }
 .guidance .guideClick2 {
-  width: 10px;
-  height: 10px;
+  width: 2vh;
+  height: 2vh;
   position: absolute;
-  right: 45px;
-  top: 30px;
+  right: 8vh;
+  top: 5vh;
   background-color: transparent;
-  border: solid 0.1px white;
+  border: solid 0.01vh white;
   border-radius: 50%;
   animation: rippleSmall 1s infinite linear;
 }
 .guidance .guideClick3 {
-  width: 10px;
-  height: 10px;
+  width: 3vh;
+  height: 3vh;
   position: absolute;
-  right: 25px;
-  bottom: 35px;
+  right: 5vh;
+  bottom: 6vh;
   background-color: transparent;
   border: solid 0.1px white;
   border-radius: 50%;
