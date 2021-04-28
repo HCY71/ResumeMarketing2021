@@ -115,7 +115,7 @@ $(document).ready(function () {
 			$(".languageSwitch .control").addClass("ch");
 			$(".languageSwitch .words_en").css("opacity", "0");
 			$(".languageSwitch .words_ch").css("opacity", "1");
-			$(".pages").load("pages_ch.html");
+			$(".pages").load("assets/pages_ch.html");
 			$(".pages").addClass("ch");
 		}
 
