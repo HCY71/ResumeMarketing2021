@@ -824,7 +824,8 @@ html, body {
   width: 100%;
   height: calc(100%/5);
   background-color: #eee;
-  box-sizing: border-box;
+  border: solid 1vh #eee;
+  /* box-sizing: border-box; */
   left: -100%;
   animation: divIn 1s;
   animation-fill-mode: forwards;

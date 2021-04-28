@@ -92,10 +92,12 @@ $(document).ready(function () {
 	.then(response => response.text())
 	.then(data => {
 		chHtml = data;
-		console.log(data);
 	});
 	$(".languageSwitch").click(function () {
-		
+		win_w = $(window).innerWidth();
+		pages_w = $(".pages").innerWidth();
+		move = win_w + pages_w;
+		$(".pages .page .container").css("margin-right", win_w + "px");
 		page = 0;
 		$(".circle").removeClass("bright");
 		if (page < 3) {
