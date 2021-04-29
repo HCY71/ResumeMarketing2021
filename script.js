@@ -60,7 +60,7 @@ $(document).ready(function () {
 		pages_w = $(".pages").innerWidth();
 		move = win_w + pages_w;
 		page = 0;
-		$(".pages .page .container").css("margin-right", win_w + "px");
+		// $(".pages .page .container").css("margin-right", win_w + "px");
 		$(".circle").removeClass("bright");
 		if (page < 3) {
 			$(".page").css("left", "-" + page * move + "px");
@@ -71,7 +71,7 @@ $(document).ready(function () {
 			$(".circle:nth-child(" + page + 1 + ")").addClass("bright");
 		}
 	});
-	$(".pages .page .container").css("margin-right", win_w + "px");
+	// $(".pages .page .container").css("margin-right", win_w + "px");
 	$(".pages").click(function () {
 		page += 1;
 		$(".circle:nth-child(" + page + ")").removeClass("bright");
@@ -88,16 +88,15 @@ $(document).ready(function () {
 	var lan_en = true;
 	var originalHtml = $(".pages").html();
 	var chHtml;
-	fetch('assets/pages_ch.txt')
+	fetch('./assets/pages_ch.txt')
 	.then(response => response.text())
 	.then(data => {
 		chHtml = data;
 	});
 	$(".languageSwitch").click(function () {
-		win_w = $(window).innerWidth();
-		pages_w = $(".pages").innerWidth();
-		move = win_w + pages_w;
-		$(".pages .page .container").css("margin-right", win_w + "px");
+		// win_w = $(window).innerWidth();
+		// pages_w = $(".pages").innerWidth();
+		// move = win_w + pages_w;
 		page = 0;
 		$(".circle").removeClass("bright");
 		if (page < 3) {
