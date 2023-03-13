@@ -1,3 +1,3 @@
-# ResumeMarketing2021
+# resume-marketing-2021
 
-[Check it out!](https://hcy71.github.io/ResumePage/)
+[Check it out!](https://hcy71.github.io/resume-marketing-2021/)
